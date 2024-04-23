@@ -1,0 +1,11 @@
+<h1>Add Task</h1>
+<form (submit)="addTask()">
+  <label for="title">Title:<span style="color: red;">*</span></label>
+  <input type="text" id="title" [(ngModel)]="task.title" name="Title" required />&nbsp;
+  <label for="description">Description:<span style="color: red;">*</span></label>
+  <textarea id="description" [(ngModel)]="task.description" name="Description" required></textarea>&nbsp;
+  <button type="submit"  [disabled]="!task.title || !task.description">Add Task</button>
+</form>
+<br>
+<a routerLink="/tasks">Back to Tasks List</a>
+<hr>

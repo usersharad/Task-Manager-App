@@ -1,0 +1,19 @@
+<h1>Tasks list</h1>
+
+<div *ngIf="tasks.length > 0; else noTasksMessage">
+  <div *ngFor="let task of tasks">
+    <div [ngClass]="{ 'completed-task': task.completed }">
+      <h3>Title: {{ task.title }}</h3>
+      <p>Description: {{ task.description }}</p>
+      <button (click)="markAsCompleted(task.id)" [disabled]="task.completed">Mark as Completed</button>
+      <button (click)="deleteTask(task.id)">Delete Task</button>
+    </div>
+  </div>
+  <a routerLink="/add-task">Back to Add Task</a>
+</div>
+
+<ng-template #noTasksMessage>
+  <p>No tasks, please add a task.</p>
+  <a routerLink="/add-task">Add Task</a>
+</ng-template>
+<hr>

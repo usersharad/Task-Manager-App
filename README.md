@@ -1,6 +1,33 @@
 # TaskManagerApp
 
+Welcome to the Task Manager App! This app allows to manage your by adding, marking as completed, and deleting them.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+
+## Features
+
+Add tasks with titles and descriptions
+Mark tasks as completed
+Delete tasks
+
+## Prerequisites
+
+Before running the application, ensure you have the following installed:
+
+Node.js and npm (Node Package Manager) - Download and Install Node.js
+Angular CLI (Command Line Interface) - Install globally via npm:
+npm install -g @angular/cli
+
+## Installation
+
+1. Clone the repository to local machine: git clone <repository-url>
+2. Navigate to the project directory: cd task-manager-app
+3. Install dependencies: npm install
+
+## Usage
+1. Start the development server: ng serve
+2. Open your web browser and navigate to http://localhost:4200/ to view the application.
+3. Use the application to add tasks, mark tasks as completed, and delete tasks.
 
 ## Development server
 
